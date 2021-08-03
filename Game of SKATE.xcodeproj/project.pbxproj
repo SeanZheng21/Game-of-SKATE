@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF4159B426B9346F00C07343 /* Game_of_SKATEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159B326B9346F00C07343 /* Game_of_SKATEApp.swift */; };
+		FF4159B626B9346F00C07343 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159B526B9346F00C07343 /* ContentView.swift */; };
+		FF4159B826B9347000C07343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4159B726B9347000C07343 /* Assets.xcassets */; };
+		FF4159BB26B9347000C07343 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4159BA26B9347000C07343 /* Preview Assets.xcassets */; };
+		FF4159C626B9347000C07343 /* Game_of_SKATETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159C526B9347000C07343 /* Game_of_SKATETests.swift */; };
+		FF4159D126B9347000C07343 /* Game_of_SKATEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159D026B9347000C07343 /* Game_of_SKATEUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4159C226B9347000C07343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4159A826B9346F00C07343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4159AF26B9346F00C07343;
+			remoteInfo = "Game of SKATE";
+		};
+		FF4159CD26B9347000C07343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4159A826B9346F00C07343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4159AF26B9346F00C07343;
+			remoteInfo = "Game of SKATE";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF4159B026B9346F00C07343 /* Game of SKATE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game of SKATE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4159B326B9346F00C07343 /* Game_of_SKATEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_SKATEApp.swift; sourceTree = "<group>"; };
+		FF4159B526B9346F00C07343 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF4159B726B9347000C07343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF4159BA26B9347000C07343 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF4159BC26B9347000C07343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4159C126B9347000C07343 /* Game of SKATETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game of SKATETests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4159C526B9347000C07343 /* Game_of_SKATETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_SKATETests.swift; sourceTree = "<group>"; };
+		FF4159C726B9347000C07343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4159CC26B9347000C07343 /* Game of SKATEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game of SKATEUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4159D026B9347000C07343 /* Game_of_SKATEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_SKATEUITests.swift; sourceTree = "<group>"; };
+		FF4159D226B9347000C07343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF4159AD26B9346F00C07343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4159BE26B9347000C07343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4159C926B9347000C07343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF4159A726B9346F00C07343 = {
+			isa = PBXGroup;
+			children = (
+				FF4159B226B9346F00C07343 /* Game of SKATE */,
+				FF4159C426B9347000C07343 /* Game of SKATETests */,
+				FF4159CF26B9347000C07343 /* Game of SKATEUITests */,
+				FF4159B126B9346F00C07343 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF4159B126B9346F00C07343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF4159B026B9346F00C07343 /* Game of SKATE.app */,
+				FF4159C126B9347000C07343 /* Game of SKATETests.xctest */,
+				FF4159CC26B9347000C07343 /* Game of SKATEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4159B226B9346F00C07343 /* Game of SKATE */ = {
+			isa = PBXGroup;
+			children = (
+				FF4159B326B9346F00C07343 /* Game_of_SKATEApp.swift */,
+				FF4159B526B9346F00C07343 /* ContentView.swift */,
+				FF4159B726B9347000C07343 /* Assets.xcassets */,
+				FF4159BC26B9347000C07343 /* Info.plist */,
+				FF4159B926B9347000C07343 /* Preview Content */,
+			);
+			path = "Game of SKATE";
+			sourceTree = "<group>";
+		};
+		FF4159B926B9347000C07343 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF4159BA26B9347000C07343 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF4159C426B9347000C07343 /* Game of SKATETests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4159C526B9347000C07343 /* Game_of_SKATETests.swift */,
+				FF4159C726B9347000C07343 /* Info.plist */,
+			);
+			path = "Game of SKATETests";
+			sourceTree = "<group>";
+		};
+		FF4159CF26B9347000C07343 /* Game of SKATEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4159D026B9347000C07343 /* Game_of_SKATEUITests.swift */,
+				FF4159D226B9347000C07343 /* Info.plist */,
+			);
+			path = "Game of SKATEUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF4159AF26B9346F00C07343 /* Game of SKATE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4159D526B9347000C07343 /* Build configuration list for PBXNativeTarget "Game of SKATE" */;
+			buildPhases = (
+				FF4159AC26B9346F00C07343 /* Sources */,
+				FF4159AD26B9346F00C07343 /* Frameworks */,
+				FF4159AE26B9346F00C07343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Game of SKATE";
+			productName = "Game of SKATE";
+			productReference = FF4159B026B9346F00C07343 /* Game of SKATE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF4159C026B9347000C07343 /* Game of SKATETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4159D826B9347000C07343 /* Build configuration list for PBXNativeTarget "Game of SKATETests" */;
+			buildPhases = (
+				FF4159BD26B9347000C07343 /* Sources */,
+				FF4159BE26B9347000C07343 /* Frameworks */,
+				FF4159BF26B9347000C07343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4159C326B9347000C07343 /* PBXTargetDependency */,
+			);
+			name = "Game of SKATETests";
+			productName = "Game of SKATETests";
+			productReference = FF4159C126B9347000C07343 /* Game of SKATETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF4159CB26B9347000C07343 /* Game of SKATEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4159DB26B9347000C07343 /* Build configuration list for PBXNativeTarget "Game of SKATEUITests" */;
+			buildPhases = (
+				FF4159C826B9347000C07343 /* Sources */,
+				FF4159C926B9347000C07343 /* Frameworks */,
+				FF4159CA26B9347000C07343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4159CE26B9347000C07343 /* PBXTargetDependency */,
+			);
+			name = "Game of SKATEUITests";
+			productName = "Game of SKATEUITests";
+			productReference = FF4159CC26B9347000C07343 /* Game of SKATEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF4159A826B9346F00C07343 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FF4159AF26B9346F00C07343 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					FF4159C026B9347000C07343 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FF4159AF26B9346F00C07343;
+					};
+					FF4159CB26B9347000C07343 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FF4159AF26B9346F00C07343;
+					};
+				};
+			};
+			buildConfigurationList = FF4159AB26B9346F00C07343 /* Build configuration list for PBXProject "Game of SKATE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF4159A726B9346F00C07343;
+			productRefGroup = FF4159B126B9346F00C07343 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF4159AF26B9346F00C07343 /* Game of SKATE */,
+				FF4159C026B9347000C07343 /* Game of SKATETests */,
+				FF4159CB26B9347000C07343 /* Game of SKATEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF4159AE26B9346F00C07343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4159BB26B9347000C07343 /* Preview Assets.xcassets in Resources */,
+				FF4159B826B9347000C07343 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4159BF26B9347000C07343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4159CA26B9347000C07343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF4159AC26B9346F00C07343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4159B626B9346F00C07343 /* ContentView.swift in Sources */,
+				FF4159B426B9346F00C07343 /* Game_of_SKATEApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4159BD26B9347000C07343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4159C626B9347000C07343 /* Game_of_SKATETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4159C826B9347000C07343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4159D126B9347000C07343 /* Game_of_SKATEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4159C326B9347000C07343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4159AF26B9346F00C07343 /* Game of SKATE */;
+			targetProxy = FF4159C226B9347000C07343 /* PBXContainerItemProxy */;
+		};
+		FF4159CE26B9347000C07343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4159AF26B9346F00C07343 /* Game of SKATE */;
+			targetProxy = FF4159CD26B9347000C07343 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF4159D326B9347000C07343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF4159D426B9347000C07343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF4159D626B9347000C07343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Game of SKATE/Preview Content\"";
+				DEVELOPMENT_TEAM = C9Z965MBZG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Game of SKATE/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CarlistleZheng.PersonalTeam.Game-of-SKATE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF4159D726B9347000C07343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Game of SKATE/Preview Content\"";
+				DEVELOPMENT_TEAM = C9Z965MBZG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Game of SKATE/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CarlistleZheng.PersonalTeam.Game-of-SKATE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF4159D926B9347000C07343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Z965MBZG;
+				INFOPLIST_FILE = "Game of SKATETests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CarlistleZheng.PersonalTeam.Game-of-SKATETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game of SKATE.app/Game of SKATE";
+			};
+			name = Debug;
+		};
+		FF4159DA26B9347000C07343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Z965MBZG;
+				INFOPLIST_FILE = "Game of SKATETests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CarlistleZheng.PersonalTeam.Game-of-SKATETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game of SKATE.app/Game of SKATE";
+			};
+			name = Release;
+		};
+		FF4159DC26B9347000C07343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Z965MBZG;
+				INFOPLIST_FILE = "Game of SKATEUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CarlistleZheng.PersonalTeam.Game-of-SKATEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Game of SKATE";
+			};
+			name = Debug;
+		};
+		FF4159DD26B9347000C07343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Z965MBZG;
+				INFOPLIST_FILE = "Game of SKATEUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CarlistleZheng.PersonalTeam.Game-of-SKATEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Game of SKATE";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF4159AB26B9346F00C07343 /* Build configuration list for PBXProject "Game of SKATE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4159D326B9347000C07343 /* Debug */,
+				FF4159D426B9347000C07343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4159D526B9347000C07343 /* Build configuration list for PBXNativeTarget "Game of SKATE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4159D626B9347000C07343 /* Debug */,
+				FF4159D726B9347000C07343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4159D826B9347000C07343 /* Build configuration list for PBXNativeTarget "Game of SKATETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4159D926B9347000C07343 /* Debug */,
+				FF4159DA26B9347000C07343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4159DB26B9347000C07343 /* Build configuration list for PBXNativeTarget "Game of SKATEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4159DC26B9347000C07343 /* Debug */,
+				FF4159DD26B9347000C07343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF4159A826B9346F00C07343 /* Project object */;
+}
