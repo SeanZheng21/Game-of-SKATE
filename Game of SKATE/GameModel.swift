@@ -88,12 +88,21 @@ struct GameModel {
         if newLetters.count > 16 || newLetters.count < 3 {
             return
         }
-        letters = newLetters
+        letters = newLetters.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         for playerIdx in players.indices {
             if players[playerIdx].letterCount > newLetters.count {
                 players[playerIdx].resetLetterCount(to: newLetters.count)
             }
         }
+    }
+    
+    static func getLettersOptions() -> [String] {
+        ["sk8",
+        "skate",
+        "skater",
+        "skaters",
+        "skateboard",
+        "skateboarding"]
     }
     
     // MARK: - Player Struct

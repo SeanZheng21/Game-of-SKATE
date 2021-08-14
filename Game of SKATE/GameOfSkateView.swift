@@ -34,6 +34,7 @@ struct GameOfSkateView: View {
         .ignoresSafeArea(edges: .top)
     }
     
+    // MARK: - header stack
     var headerStack: some View {
         HStack {
             Text("Game of \(game.letters)!")
@@ -52,10 +53,11 @@ struct GameOfSkateView: View {
             .foregroundColor(.white)
         }
         .padding(.horizontal)
-        .padding(.top, 28.0)
-        .background(Color.blue)
+        .padding(.top, 32.0)
+        .background(Color(#colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)))
     }
     
+    // MARK: - player stack
     var playersStack: some View {
         List {
             ForEach(game.players) { player in

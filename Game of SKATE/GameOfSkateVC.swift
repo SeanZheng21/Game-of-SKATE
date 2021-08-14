@@ -20,9 +20,9 @@ class GameOfSkateVC: ObservableObject {
         gameModel.players
     }
     
-    var game: GameModel {
-        gameModel
-    }
+//    var game: GameModel {
+//        gameModel
+//    }
     
     init(game: GameModel) {
         self.gameModel = game
