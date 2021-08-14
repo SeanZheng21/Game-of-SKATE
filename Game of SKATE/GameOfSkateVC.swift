@@ -8,10 +8,16 @@
 import Foundation
 
 class GameOfSkateVC: ObservableObject {
-    private var gameModel: GameModel
+    typealias Player = GameModel.Player
+    
+    @Published private var gameModel: GameModel
     
     var letters: String {
         gameModel.letters
+    }
+    
+    var players: [Player] {
+        gameModel.players
     }
     
     init(game: GameModel) {
@@ -20,5 +26,33 @@ class GameOfSkateVC: ObservableObject {
     
     init(letters: String, playerNames: [String]) {
         self.gameModel = GameModel(letters: letters, playerNames: playerNames)
+    }
+    
+    func lettersOfPlayer(_ player: Player) -> String {
+        return gameModel.lettersOfPlayer(player)
+    }
+    
+    func lettersOfCount(_ count: Int) -> String {
+        return gameModel.lettersOfCount(count)
+    }
+    
+    func giveLetter(to player: Player) {
+        gameModel.giveLetter(to: player)
+    }
+    
+    func removeLetter(to player: Player) {
+        gameModel.removeLetter(from: player)
+    }
+    
+    func winner() -> Player? {
+        return gameModel.winner()
+    }
+    
+    func removePlayer(_ player: Player) {
+        gameModel.removePlayer(player)
+    }
+    
+    func addPlayer(_ playerName: String="") {
+        gameModel.addPlayer(playerName)
     }
 }
