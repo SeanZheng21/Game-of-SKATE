@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF4159B426B9346F00C07343 /* Game_of_SKATEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159B326B9346F00C07343 /* Game_of_SKATEApp.swift */; };
-		FF4159B626B9346F00C07343 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159B526B9346F00C07343 /* ContentView.swift */; };
+		FF3E3DAF26C752FE00D9CD66 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E3DAE26C752FE00D9CD66 /* GameModel.swift */; };
+		FF3E3DB126C7556000D9CD66 /* GameOfSkateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E3DB026C7556000D9CD66 /* GameOfSkateVC.swift */; };
+		FF4159B426B9346F00C07343 /* GameOfSkateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159B326B9346F00C07343 /* GameOfSkateApp.swift */; };
+		FF4159B626B9346F00C07343 /* GameOfSkateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159B526B9346F00C07343 /* GameOfSkateView.swift */; };
 		FF4159B826B9347000C07343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4159B726B9347000C07343 /* Assets.xcassets */; };
 		FF4159BB26B9347000C07343 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4159BA26B9347000C07343 /* Preview Assets.xcassets */; };
 		FF4159C626B9347000C07343 /* Game_of_SKATETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159C526B9347000C07343 /* Game_of_SKATETests.swift */; };
@@ -33,9 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF3E3DAE26C752FE00D9CD66 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		FF3E3DB026C7556000D9CD66 /* GameOfSkateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfSkateVC.swift; sourceTree = "<group>"; };
 		FF4159B026B9346F00C07343 /* Game of SKATE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game of SKATE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF4159B326B9346F00C07343 /* Game_of_SKATEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_SKATEApp.swift; sourceTree = "<group>"; };
-		FF4159B526B9346F00C07343 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF4159B326B9346F00C07343 /* GameOfSkateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfSkateApp.swift; sourceTree = "<group>"; };
+		FF4159B526B9346F00C07343 /* GameOfSkateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfSkateView.swift; sourceTree = "<group>"; };
 		FF4159B726B9347000C07343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF4159BA26B9347000C07343 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF4159BC26B9347000C07343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,8 +99,10 @@
 		FF4159B226B9346F00C07343 /* Game of SKATE */ = {
 			isa = PBXGroup;
 			children = (
-				FF4159B326B9346F00C07343 /* Game_of_SKATEApp.swift */,
-				FF4159B526B9346F00C07343 /* ContentView.swift */,
+				FF4159B526B9346F00C07343 /* GameOfSkateView.swift */,
+				FF3E3DB026C7556000D9CD66 /* GameOfSkateVC.swift */,
+				FF3E3DAE26C752FE00D9CD66 /* GameModel.swift */,
+				FF4159B326B9346F00C07343 /* GameOfSkateApp.swift */,
 				FF4159B726B9347000C07343 /* Assets.xcassets */,
 				FF4159BC26B9347000C07343 /* Info.plist */,
 				FF4159B926B9347000C07343 /* Preview Content */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF4159B626B9346F00C07343 /* ContentView.swift in Sources */,
-				FF4159B426B9346F00C07343 /* Game_of_SKATEApp.swift in Sources */,
+				FF3E3DB126C7556000D9CD66 /* GameOfSkateVC.swift in Sources */,
+				FF4159B626B9346F00C07343 /* GameOfSkateView.swift in Sources */,
+				FF4159B426B9346F00C07343 /* GameOfSkateApp.swift in Sources */,
+				FF3E3DAF26C752FE00D9CD66 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
