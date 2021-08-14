@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FF3E3DAF26C752FE00D9CD66 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E3DAE26C752FE00D9CD66 /* GameModel.swift */; };
 		FF3E3DB126C7556000D9CD66 /* GameOfSkateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E3DB026C7556000D9CD66 /* GameOfSkateVC.swift */; };
+		FF3E3DB326C79D0D00D9CD66 /* LettersEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E3DB226C79D0D00D9CD66 /* LettersEditView.swift */; };
 		FF4159B426B9346F00C07343 /* GameOfSkateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159B326B9346F00C07343 /* GameOfSkateApp.swift */; };
 		FF4159B626B9346F00C07343 /* GameOfSkateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159B526B9346F00C07343 /* GameOfSkateView.swift */; };
 		FF4159B826B9347000C07343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4159B726B9347000C07343 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		FF3E3DAE26C752FE00D9CD66 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		FF3E3DB026C7556000D9CD66 /* GameOfSkateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfSkateVC.swift; sourceTree = "<group>"; };
+		FF3E3DB226C79D0D00D9CD66 /* LettersEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersEditView.swift; sourceTree = "<group>"; };
 		FF4159B026B9346F00C07343 /* Game of SKATE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game of SKATE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4159B326B9346F00C07343 /* GameOfSkateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfSkateApp.swift; sourceTree = "<group>"; };
 		FF4159B526B9346F00C07343 /* GameOfSkateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfSkateView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				FF4159B526B9346F00C07343 /* GameOfSkateView.swift */,
 				FF3E3DB026C7556000D9CD66 /* GameOfSkateVC.swift */,
+				FF3E3DB226C79D0D00D9CD66 /* LettersEditView.swift */,
 				FF3E3DAE26C752FE00D9CD66 /* GameModel.swift */,
 				FF4159B326B9346F00C07343 /* GameOfSkateApp.swift */,
 				FF4159B726B9347000C07343 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 				FF3E3DB126C7556000D9CD66 /* GameOfSkateVC.swift in Sources */,
 				FF4159B626B9346F00C07343 /* GameOfSkateView.swift in Sources */,
 				FF4159B426B9346F00C07343 /* GameOfSkateApp.swift in Sources */,
+				FF3E3DB326C79D0D00D9CD66 /* LettersEditView.swift in Sources */,
 				FF3E3DAF26C752FE00D9CD66 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

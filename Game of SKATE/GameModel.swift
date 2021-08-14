@@ -32,6 +32,10 @@ struct GameModel {
         }
     }
     
+    func playerExists(name: String) -> Bool {
+        return players.contains(where: { $0.name == name })
+    }
+    
     mutating func giveLetter(to player: Player) {
         for playerIdx in players.indices {
             if players[playerIdx].id == player.id {
@@ -55,10 +59,19 @@ struct GameModel {
                 players[playerIdx].id -= 1
             }
         }
+        if players.count == 0 {
+            addPlayer("Skater 1")
+            addPlayer("Skater 2")
+        }
     }
     
     mutating func addPlayer(_ playerName: String="")  {
-        let nameToAdd = playerName == "" ? "Player \(players.count)" : playerName
+        var incr = 1
+        // Find an inexisting name for the new player
+        while playerExists(name: "Skater \(players.count + incr)") {
+            incr += 1
+        }
+        let nameToAdd = playerName == "" ? "Skater \(players.count + incr)" : playerName
         players.append(Player(id: players.count, name: nameToAdd))
     }
     
@@ -68,6 +81,18 @@ struct GameModel {
             return leftPlayers[0]
         } else {
             return nil
+        }
+    }
+    
+    mutating func setLetters(to newLetters: String) {
+        if newLetters.count > 16 || newLetters.count < 3 {
+            return
+        }
+        letters = newLetters
+        for playerIdx in players.indices {
+            if players[playerIdx].letterCount > newLetters.count {
+                players[playerIdx].resetLetterCount(to: newLetters.count)
+            }
         }
     }
     

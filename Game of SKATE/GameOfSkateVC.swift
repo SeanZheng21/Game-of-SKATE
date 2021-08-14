@@ -20,6 +20,10 @@ class GameOfSkateVC: ObservableObject {
         gameModel.players
     }
     
+    var game: GameModel {
+        gameModel
+    }
+    
     init(game: GameModel) {
         self.gameModel = game
     }
@@ -48,11 +52,22 @@ class GameOfSkateVC: ObservableObject {
         return gameModel.winner()
     }
     
+    func removePlayer(at indexSet: IndexSet) {
+        for index in indexSet {
+            let player = players[index]
+            gameModel.removePlayer(player)
+        }
+    }
+    
     func removePlayer(_ player: Player) {
         gameModel.removePlayer(player)
     }
     
     func addPlayer(_ playerName: String="") {
         gameModel.addPlayer(playerName)
+    }
+    
+    func setLetters(to newLetters: String) {
+        gameModel.setLetters(to: newLetters)
     }
 }
