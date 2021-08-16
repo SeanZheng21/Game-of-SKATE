@@ -11,7 +11,7 @@ import SwiftUI
 struct GameOfSkateApp: App {
     var body: some Scene {
         WindowGroup {
-            GameOfSkateView(game: GameOfSkateVC(letters: "skate",
+            GameOfSkateView(game: GameOfSkateVC(letters: "SKATE",
                                                 playerNames: ["Skater 1", "Skater 2", "Skater 3"]))
         }
     }

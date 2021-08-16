@@ -12,7 +12,7 @@ struct GameModel {
     private(set) var players: [Player]
     
     init(letters: String="SKATE", playerNames: [String]=["Skater 1", "Skater 2"]) {
-        self.letters = letters
+        self.letters = letters.uppercased()
         self.players = []
         for playerIdx in 0..<playerNames.count {
             self.players.append(Player(id: playerIdx, name: playerNames[playerIdx]))
@@ -88,7 +88,7 @@ struct GameModel {
         if newLetters.count > 16 || newLetters.count < 3 {
             return
         }
-        letters = newLetters.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        letters = newLetters.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         for playerIdx in players.indices {
             if players[playerIdx].letterCount > newLetters.count {
                 players[playerIdx].resetLetterCount(to: newLetters.count)
@@ -96,13 +96,28 @@ struct GameModel {
         }
     }
     
+    mutating func restartGame() {
+        for playerIdx in players.indices {
+            players[playerIdx].resetLetterCount()
+        }
+    }
+    
+    mutating func renamePlayer(_ player: Player, to newName: String) {
+        for playerIdx in players.indices {
+            if players[playerIdx].id == player.id {
+                players[playerIdx].renamePlayer(to: newName)
+            }
+        }
+    }
+    
+    // MARK: - Static methods
     static func getLettersOptions() -> [String] {
-        ["sk8",
-        "skate",
-        "skater",
-        "skaters",
-        "skateboard",
-        "skateboarding"]
+        ["SK8",
+        "SKATE",
+        "SKATER",
+        "SKATERS",
+        "SKATEBOARD",
+        "SKATEBOARDING"]
     }
     
     // MARK: - Player Struct
@@ -130,6 +145,10 @@ struct GameModel {
             
             mutating func resetLetterCount(to letterCount: Int=0) {
                 self.letterCount = letterCount
+            }
+            
+            mutating func renamePlayer(to newName: String) {
+                name = newName
             }
     }
 }

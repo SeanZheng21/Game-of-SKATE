@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class GameOfSkateVC: ObservableObject {
     typealias Player = GameModel.Player
@@ -20,16 +21,24 @@ class GameOfSkateVC: ObservableObject {
         gameModel.players
     }
     
-//    var game: GameModel {
-//        gameModel
-//    }
-    
     init(game: GameModel) {
         self.gameModel = game
     }
     
     init(letters: String, playerNames: [String]) {
         self.gameModel = GameModel(letters: letters, playerNames: playerNames)
+    }
+    
+    func letterTuplesOfPlayer(_ player: Player) -> [IdentifiableString] {
+        let characters = gameModel.lettersOfPlayer(player).map({ String($0) })
+        var stringTuples = [IdentifiableString]()
+        for idx in 0..<gameModel.letters.count {
+            stringTuples.append(IdentifiableString(id: idx, str: " "))
+        }
+        for strIdx in characters.indices {
+            stringTuples[strIdx] = IdentifiableString(id: strIdx, str: characters[strIdx])
+        }
+        return stringTuples
     }
     
     func lettersOfPlayer(_ player: Player) -> String {
@@ -44,7 +53,7 @@ class GameOfSkateVC: ObservableObject {
         gameModel.giveLetter(to: player)
     }
     
-    func removeLetter(to player: Player) {
+    func removeLetter(from player: Player) {
         gameModel.removeLetter(from: player)
     }
     
@@ -69,5 +78,38 @@ class GameOfSkateVC: ObservableObject {
     
     func setLetters(to newLetters: String) {
         gameModel.setLetters(to: newLetters)
+    }
+    
+    func restartGame() {
+        gameModel.restartGame()
+    }
+    
+    func renamePlayer(_ player: Player, to newName: String) {
+        gameModel.renamePlayer(player, to: newName)
+    }
+    
+    func aspectRatioForCell() -> CGFloat {
+        if gameModel.letters.count <= 5 {
+            return 2 / 3         // One Row
+        } else if gameModel.letters.count <= 10 {
+            return 4 / 5         // Two Rows
+        } else {
+            return 6 / 7             // Three Rows
+        }
+    }
+    
+    func heightForCell() -> CGFloat {
+        if gameModel.letters.count <= 5 {
+            return 150         // One Row
+        } else if gameModel.letters.count <= 10 {
+            return 220         // Two Rows
+        } else {
+            return 280             // Three Rows
+        }
+    }
+    
+    struct IdentifiableString: Identifiable {
+        let id: Int
+        let str: String
     }
 }

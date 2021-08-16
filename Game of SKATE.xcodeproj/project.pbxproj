@@ -16,6 +16,8 @@
 		FF4159BB26B9347000C07343 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4159BA26B9347000C07343 /* Preview Assets.xcassets */; };
 		FF4159C626B9347000C07343 /* Game_of_SKATETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159C526B9347000C07343 /* Game_of_SKATETests.swift */; };
 		FF4159D126B9347000C07343 /* Game_of_SKATEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159D026B9347000C07343 /* Game_of_SKATEUITests.swift */; };
+		FF5E1E8B26C8A5790058DB20 /* PlayerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E1E8A26C8A5790058DB20 /* PlayerCellView.swift */; };
+		FF5E1E8F26C8FA8B0058DB20 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E1E8E26C8FA8B0058DB20 /* Cardify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FF4159CC26B9347000C07343 /* Game of SKATEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game of SKATEUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4159D026B9347000C07343 /* Game_of_SKATEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_SKATEUITests.swift; sourceTree = "<group>"; };
 		FF4159D226B9347000C07343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5E1E8A26C8A5790058DB20 /* PlayerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCellView.swift; sourceTree = "<group>"; };
+		FF5E1E8E26C8FA8B0058DB20 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +105,16 @@
 		FF4159B226B9346F00C07343 /* Game of SKATE */ = {
 			isa = PBXGroup;
 			children = (
-				FF4159B526B9346F00C07343 /* GameOfSkateView.swift */,
 				FF3E3DB026C7556000D9CD66 /* GameOfSkateVC.swift */,
+				FF4159B526B9346F00C07343 /* GameOfSkateView.swift */,
 				FF3E3DB226C79D0D00D9CD66 /* LettersEditView.swift */,
 				FF3E3DAE26C752FE00D9CD66 /* GameModel.swift */,
 				FF4159B326B9346F00C07343 /* GameOfSkateApp.swift */,
 				FF4159B726B9347000C07343 /* Assets.xcassets */,
 				FF4159BC26B9347000C07343 /* Info.plist */,
 				FF4159B926B9347000C07343 /* Preview Content */,
+				FF5E1E8A26C8A5790058DB20 /* PlayerCellView.swift */,
+				FF5E1E8E26C8FA8B0058DB20 /* Cardify.swift */,
 			);
 			path = "Game of SKATE";
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF3E3DB126C7556000D9CD66 /* GameOfSkateVC.swift in Sources */,
+				FF5E1E8B26C8A5790058DB20 /* PlayerCellView.swift in Sources */,
+				FF5E1E8F26C8FA8B0058DB20 /* Cardify.swift in Sources */,
 				FF4159B626B9346F00C07343 /* GameOfSkateView.swift in Sources */,
 				FF4159B426B9346F00C07343 /* GameOfSkateApp.swift in Sources */,
 				FF3E3DB326C79D0D00D9CD66 /* LettersEditView.swift in Sources */,

@@ -44,10 +44,19 @@ struct GameOfSkateView: View {
                 .multilineTextAlignment(.center)
                 .padding()
             Spacer()
+            
             Button(action: {
                 showImagePicker = true
             }) {
                 Image(systemName: "pencil.circle.fill")
+                    .font(.largeTitle)
+            }
+            .foregroundColor(.white)
+            
+            Button(action: {
+                game.restartGame()
+            }) {
+                Image(systemName: "arrow.counterclockwise.circle.fill")
                     .font(.largeTitle)
             }
             .foregroundColor(.white)
@@ -61,26 +70,7 @@ struct GameOfSkateView: View {
     var playersStack: some View {
         List {
             ForEach(game.players) { player in
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Player: \(player.name)")
-                        Text("Letters: \(game.lettersOfPlayer(player))")
-                    }
-                    Spacer()
-                    
-                    Button("↩") {
-                        game.removeLetter(to: player)
-                    }
-                    .buttonStyle(PlainButtonStyle())
-                    .disabled(game.lettersOfPlayer(player) == "")
-                    
-                    Button("Letter!") {
-                        game.giveLetter(to: player)
-                    }
-                    .buttonStyle(PlainButtonStyle())
-                    .disabled(game.lettersOfPlayer(player) == game.letters)
-                }
-                .padding(.horizontal)
+                PlayerCellView(player, game)
             }
             .onDelete(perform: { indexSet in
                 game.removePlayer(at: indexSet)
@@ -91,8 +81,8 @@ struct GameOfSkateView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GameOfSkateView(game: GameOfSkateVC(letters: "skate",
-                                            playerNames: ["Skatet 1", "Skater 2", "Skater 3"]))
+        GameOfSkateView(game: GameOfSkateVC(letters: "SKATE",
+                                            playerNames: ["Skater 1", "Skater 2", "Skater 3"]))
             .previewDevice("iPhone 12")
     }
 }

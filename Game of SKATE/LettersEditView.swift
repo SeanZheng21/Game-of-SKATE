@@ -62,7 +62,7 @@ struct LettersEditView: View {
                             presentationMode.wrappedValue.dismiss()
                         }
                     })
-                        .autocapitalization(.none)
+                        .autocapitalization(.allCharacters)
                         .disableAutocorrection(true)
                         .onAppear(perform: {
                             self.lettersContent = game.letters
@@ -115,7 +115,7 @@ struct LettersEditView: View {
 
 struct LettersEditView_Previews: PreviewProvider {
     static var previews: some View {
-        LettersEditView(game: GameOfSkateVC(letters: "skate",
-                                            playerNames: ["Skatet 1", "Skater 2", "Skater 3"]))
+        LettersEditView(game: GameOfSkateVC(letters: "SKATE",
+                                            playerNames: ["Skater 1", "Skater 2", "Skater 3"]))
     }
 }
