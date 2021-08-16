@@ -61,6 +61,10 @@ class GameOfSkateVC: ObservableObject {
         return gameModel.winner()
     }
     
+    func hasWinner() -> Bool {
+        return gameModel.winner() != nil
+    }
+    
     func removePlayer(at indexSet: IndexSet) {
         for index in indexSet {
             let player = players[index]

@@ -18,37 +18,47 @@ struct GameOfSkateView: View {
     
     var body: some View {
         VStack {
-            headerStack
-            playersStack
-            Spacer()
-            Button("Add Player") {
-                game.addPlayer()
+            if game.hasWinner() {
+                WinnerView(game: game)
+            } else {
+                headerStack
+                playersStack
             }
-            Text("Winnder: \(game.winner()?.name ?? "")")
-                .foregroundColor(Color(#colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)))
+            Spacer()
         }
         .sheet(isPresented: $showImagePicker) {
             LettersEditView(game: game)
         }
         .padding(.horizontal, 0.0)
+        .ignoresSafeArea(edges: .bottom)
         .ignoresSafeArea(edges: .top)
+        
     }
     
     // MARK: - header stack
     var headerStack: some View {
-        HStack {
-            Text("Game of \(game.letters)!")
-                .font(.title)
+        HStack (spacing: 0) {
+            Text("Game of \(game.letters)")
+                .font(game.letters.count > 9 ? .title2 : .title)
                 .fontWeight(.heavy)
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
                 .padding()
-            Spacer()
-            
             Button(action: {
                 showImagePicker = true
             }) {
                 Image(systemName: "pencil.circle.fill")
+                    .font(.largeTitle)
+            }
+            .padding(.trailing)
+            .foregroundColor(.white)
+            
+            Spacer()
+            
+            Button(action: {
+                game.addPlayer()
+            }) {
+                Image(systemName: "person.crop.circle.fill.badge.plus")
                     .font(.largeTitle)
             }
             .foregroundColor(.white)
@@ -61,8 +71,9 @@ struct GameOfSkateView: View {
             }
             .foregroundColor(.white)
         }
-        .padding(.horizontal)
-        .padding(.top, 32.0)
+        .padding(.leading, 7.0)
+        .padding(.trailing)
+        .padding(.top, 35.0)
         .background(Color(#colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)))
     }
     
@@ -76,6 +87,14 @@ struct GameOfSkateView: View {
                 game.removePlayer(at: indexSet)
             })
         }
+    }
+}
+
+enum ActiveSheet: Identifiable {
+    case first, second
+    
+    var id: Int {
+        hashValue
     }
 }
 

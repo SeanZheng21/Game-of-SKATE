@@ -12,6 +12,7 @@ struct PlayerCellView: View {
     
     private var player: Player
     @ObservedObject private var game: GameOfSkateVC
+    @State private var showPlayerNameEditor = false
     
     init(_ player: Player, _ game: GameOfSkateVC) {
         self.player = player
@@ -21,49 +22,61 @@ struct PlayerCellView: View {
     var body: some View {
         let canGiveLetter = game.lettersOfPlayer(player) != ""
         let canRemove = game.lettersOfPlayer(player) != game.letters
-        return VStack (alignment: .leading) {
-            HStack (alignment: .top) {
-                Text(player.name)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    .lineLimit(2)
-                Spacer()
-                
-                Button (action: {
-                    withAnimation {
-                        game.removeLetter(from: player)
-                    }
-                }, label: {
-                    Image(systemName: "arrow.counterclockwise.circle.fill")
-                        .foregroundColor(game.lettersOfPlayer(player) != "" ? Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)) : Color(#colorLiteral(red: 0.7421531115, green: 0.6027904466, blue: 1, alpha: 1)))
-                        .frame(width: 43.0, height: 43.0)
-                        .font(.title)
-                })
-                .buttonStyle(GradientButtonStyle(isEnabled: canGiveLetter))
-                .disabled(!canGiveLetter)
-                
-                Button (action: {
-                    withAnimation {
-                        game.giveLetter(to: player)
-                    }
-                }, label: {
-                    Text("LETTER")
-                        .font(.title2)
+        return
+            ZStack {
+                VStack (alignment: .leading) {
+                HStack (alignment: .top) {
+                    Text(player.name)
+                        .font(player.name.count < 9 ? .largeTitle : .title2)
                         .fontWeight(.bold)
-                        .padding(.horizontal, 18.0)
-                        .padding(.vertical, 8.0)
-                        .multilineTextAlignment(.center)
-                })
-                .buttonStyle(GradientButtonStyle(isEnabled: canRemove))
-                .disabled(!canRemove)
+                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .lineLimit(2)
+                        .onTapGesture {
+                            withAnimation {
+                                showPlayerNameEditor = true
+                            }
+                        }
+                    Spacer()
+                    
+                    Button (action: {
+                        withAnimation {
+                            game.removeLetter(from: player)
+                        }
+                    }, label: {
+                        Image(systemName: "arrow.counterclockwise.circle.fill")
+                            .foregroundColor(game.lettersOfPlayer(player) != "" ? Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)) : Color(#colorLiteral(red: 0.7421531115, green: 0.6027904466, blue: 1, alpha: 1)))
+                            .frame(width: 43.0, height: 43.0)
+                            .font(.title)
+                    })
+                    .buttonStyle(GradientButtonStyle(isEnabled: canGiveLetter))
+                    .disabled(!canGiveLetter)
+                    
+                    Button (action: {
+                        withAnimation {
+                            game.giveLetter(to: player)
+                        }
+                    }, label: {
+                        Text("LETTER")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .padding(.horizontal, 18.0)
+                            .padding(.vertical, 8.0)
+                            .multilineTextAlignment(.center)
+                    })
+                    .buttonStyle(GradientButtonStyle(isEnabled: canRemove))
+                    .disabled(!canRemove)
+                }
+                Spacer()
+                letterStack
+                Spacer()
             }
-            Spacer()
-            letterStack
-            Spacer()
+            .padding(.all)
+            .frame(height: game.heightForCell())
+                if (showPlayerNameEditor) {
+                    PlayerNameEditView($showPlayerNameEditor, game, player)
+                        .popup(isPresented: showPlayerNameEditor, alignment: .top, direction: .top)
+                }
         }
-        .padding(.all)
-        .frame(height: game.heightForCell())
     }
     
     // MARK: - Letter Stack
@@ -88,6 +101,12 @@ struct PlayerCellView: View {
             }
         }
     }
+    
+//    private func passPopupView() -> () -> PlayerNameEditView {
+//        return () -> PlayerNameEditView.Self {
+//            PlayerNameEditView($showPlayerNameEditor)
+//        }
+//    }
 }
 
 struct GradientButtonStyle: ButtonStyle {

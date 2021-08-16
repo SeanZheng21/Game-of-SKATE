@@ -68,10 +68,13 @@ struct LettersEditView: View {
                             self.lettersContent = game.letters
                         })
                         .padding(.all)
-                        .padding(.leading)
-                        .padding(.trailing)
                         .foregroundColor(.purple)
                         .zIndex(1)
+                        .onReceive(NotificationCenter.default.publisher(for: UITextField.textDidBeginEditingNotification)) { obj in
+                            if let textField = obj.object as? UITextField {
+                                textField.selectedTextRange = textField.textRange(from: textField.beginningOfDocument, to: textField.endOfDocument)
+                            }
+                        }
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(lineWidth: 2)
                         .frame(height: 40.0)
