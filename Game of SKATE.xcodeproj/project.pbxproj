@@ -18,6 +18,10 @@
 		FF4159D126B9347000C07343 /* Game_of_SKATEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4159D026B9347000C07343 /* Game_of_SKATEUITests.swift */; };
 		FF5E1E8B26C8A5790058DB20 /* PlayerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E1E8A26C8A5790058DB20 /* PlayerCellView.swift */; };
 		FF5E1E8F26C8FA8B0058DB20 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E1E8E26C8FA8B0058DB20 /* Cardify.swift */; };
+		FF96FA6E26C9E97900189D8D /* CustomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF96FA6D26C9E97900189D8D /* CustomPopup.swift */; };
+		FF96FA7026C9EAA100189D8D /* PlayerNameEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF96FA6F26C9EAA100189D8D /* PlayerNameEditView.swift */; };
+		FF96FA7226CA156100189D8D /* WinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF96FA7126CA156100189D8D /* WinnerView.swift */; };
+		FFC1045026CA63BF007FAD94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1044F26CA63BF007FAD94 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		FF4159D226B9347000C07343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF5E1E8A26C8A5790058DB20 /* PlayerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCellView.swift; sourceTree = "<group>"; };
 		FF5E1E8E26C8FA8B0058DB20 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
+		FF96FA6D26C9E97900189D8D /* CustomPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopup.swift; sourceTree = "<group>"; };
+		FF96FA6F26C9EAA100189D8D /* PlayerNameEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNameEditView.swift; sourceTree = "<group>"; };
+		FF96FA7126CA156100189D8D /* WinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerView.swift; sourceTree = "<group>"; };
+		FFC1044F26CA63BF007FAD94 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,15 +114,19 @@
 			isa = PBXGroup;
 			children = (
 				FF3E3DB026C7556000D9CD66 /* GameOfSkateVC.swift */,
+				FF96FA6D26C9E97900189D8D /* CustomPopup.swift */,
 				FF4159B526B9346F00C07343 /* GameOfSkateView.swift */,
 				FF3E3DB226C79D0D00D9CD66 /* LettersEditView.swift */,
 				FF3E3DAE26C752FE00D9CD66 /* GameModel.swift */,
 				FF4159B326B9346F00C07343 /* GameOfSkateApp.swift */,
 				FF4159B726B9347000C07343 /* Assets.xcassets */,
 				FF4159BC26B9347000C07343 /* Info.plist */,
+				FFC1044F26CA63BF007FAD94 /* LaunchScreen.storyboard */,
 				FF4159B926B9347000C07343 /* Preview Content */,
 				FF5E1E8A26C8A5790058DB20 /* PlayerCellView.swift */,
 				FF5E1E8E26C8FA8B0058DB20 /* Cardify.swift */,
+				FF96FA6F26C9EAA100189D8D /* PlayerNameEditView.swift */,
+				FF96FA7126CA156100189D8D /* WinnerView.swift */,
 			);
 			path = "Game of SKATE";
 			sourceTree = "<group>";
@@ -248,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC1045026CA63BF007FAD94 /* LaunchScreen.storyboard in Resources */,
 				FF4159BB26B9347000C07343 /* Preview Assets.xcassets in Resources */,
 				FF4159B826B9347000C07343 /* Assets.xcassets in Resources */,
 			);
@@ -277,9 +290,12 @@
 				FF3E3DB126C7556000D9CD66 /* GameOfSkateVC.swift in Sources */,
 				FF5E1E8B26C8A5790058DB20 /* PlayerCellView.swift in Sources */,
 				FF5E1E8F26C8FA8B0058DB20 /* Cardify.swift in Sources */,
+				FF96FA6E26C9E97900189D8D /* CustomPopup.swift in Sources */,
 				FF4159B626B9346F00C07343 /* GameOfSkateView.swift in Sources */,
+				FF96FA7226CA156100189D8D /* WinnerView.swift in Sources */,
 				FF4159B426B9346F00C07343 /* GameOfSkateApp.swift in Sources */,
 				FF3E3DB326C79D0D00D9CD66 /* LettersEditView.swift in Sources */,
+				FF96FA7026C9EAA100189D8D /* PlayerNameEditView.swift in Sources */,
 				FF3E3DAF26C752FE00D9CD66 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
