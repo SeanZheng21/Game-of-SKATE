@@ -32,9 +32,9 @@ You can view a list of players and their letters for your game of S.K.A.T.E.
 - When a skater wins, restart the game by pressing "Restart" button
 
 ## Demo
-![demo1](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/ezgif-2-629588d64e6d.gif)
-![demo2](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/ezgif-2-bd345091d858.gif)
-![demo3](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/ezgif-2-e80f2b128577.gif)
+![rec1](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/rec1.gif)
+![rec2](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/rec2.gif)
+![rec3](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/rec3.gif)
 
 ## Skater List
 ![home1](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/home1.png)
