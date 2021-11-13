@@ -31,3 +31,27 @@ You can view a list of players and their letters for your game of S.K.A.T.E.
 
 - When a skater wins, restart the game by pressing "Restart" button
 
+## Demo
+![demo1](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/ezgif-2-629588d64e6d.gif)
+![demo2](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/ezgif-2-bd345091d858.gif)
+![demo3](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/ezgif-2-e80f2b128577.gif)
+
+## Skater List
+![home1](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/home1.png)
+![home2](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/home2.png)
+
+## Add, Remove Player
+![delete](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/delete.png)
+![newplayer](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/newplayer.png)
+
+## Edit Player Name
+![name](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/name.png)
+
+## Edit SKATE Letters
+![letter](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/letter.png)
+
+## Display Winner
+![winner](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/winner.png)
+
+## Launch Screen
+![launch](https://github.com/SeanZheng21/iOS-Game-of-SKATE/blob/main/Screenshots/launch.png)
